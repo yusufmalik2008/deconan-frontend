@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Detektif Conan: Organisasi Hitam</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .glassmorphism {
+            background: rgba(26, 26, 46, 0.6); /* Slightly transparent background */
+            -webkit-backdrop-filter: blur(10px); /* For Safari */
+            backdrop-filter: blur(10px); /* Blur effect */
+            border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle border */
+        }
+    </style>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#b71c1c", /* Replaced with theme red */
+              "background-light": "#e0e0e0", /* Light gray */
+              "background-dark": "#121212", /* Very dark gray */
+            },
+            fontFamily: {
+              "display": ["Inter", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 flex items-center justify-between whitespace-nowrap border-b border-solid border-white/10 px-6 sm:px-10 py-3 glassmorphism">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-white">
+<div class="size-6 text-primary">
+<span class="material-symbols-outlined !text-3xl">local_police</span>
+</div>
+<h2 class="text-white text-lg font-bold leading-tight tracking-[-0.015em]">Detektif Conan Wiki</h2>
+</div>
+<div class="hidden md:flex items-center gap-9">
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Home</a>
+<a class="text-white text-sm font-bold leading-normal border-b-2 border-primary pb-1" href="#">Characters</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Organizations</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Episodes</a>
+<a class="text-white/80 hover:text-white text-sm font-medium leading-normal" href="#">Theories</a>
+</div>
+</div>
+<div class="flex flex-1 justify-end gap-4 sm:gap-8">
+<label class="hidden sm:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#9d9db9] flex border-none bg-black/30 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-white focus:outline-0 focus:ring-0 border-none bg-black/30 focus:border-none h-full placeholder:text-[#9d9db9] px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Search..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-white text-sm font-bold leading-normal tracking-[0.015em] hover:bg-primary/80 transition-colors">
+<span class="truncate">Log In</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Main Content Area -->
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5">
+<div class="layout-content-container flex w-full max-w-7xl flex-1 px-4 sm:px-6 lg:px-8">
+<!-- Sticky SideNavBar -->
+<aside class="hidden lg:block w-64 flex-shrink-0 pr-8">
+<div class="sticky top-24">
+<div class="flex h-full min-h-[700px] flex-col justify-start glassmorphism p-4 rounded-xl">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" data-alt="Black Organization Symbol" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvUzARog55QXuegeX2geGj1DitLKP9yr16qcLSjZn0mpmYYk0LLH4Z5vaCHN7JN9OcA4KPxlsyXe3IH1Q9uPAe2T-ptkqkjUeV7ZUAcgJBLuCj4X9sFZC6aB4BsEyo_3EMUwcTaYRfImjKG75YjDWxJzcf53kjYnADLY_CcEkM4gtSnZS6KO6VmYGqOLNyjkLhumh5ZgXlXNhOTrdNAWmN5B2f1xm68fnhzIM5nfN4mr1l2t8jv8kQZiqjWPKyISlj_fktyF8NbrI");'></div>
+<div class="flex flex-col">
+<h1 class="text-white text-base font-medium leading-normal">Organisasi Hitam</h1>
+<p class="text-white/60 text-sm font-normal leading-normal">Navigasi Cepat</p>
+</div>
+</div>
+<div class="flex flex-col gap-2 mt-4">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg bg-primary/30 hover:bg-primary/50 transition-colors" href="#pendahuluan">
+<span class="material-symbols-outlined text-white">info</span>
+<p class="text-white text-sm font-medium leading-normal">Pendahuluan</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors" href="#sejarah">
+<span class="material-symbols-outlined text-white/80">history</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Sejarah &amp; Tujuan</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors" href="#anggota">
+<span class="material-symbols-outlined text-white/80">groups</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Anggota Penting</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors" href="#operasi">
+<span class="material-symbols-outlined text-white/80">gavel</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Operasi Utama</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors" href="#korban">
+<span class="material-symbols-outlined text-white/80">skull</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Korban Terkenal</p>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg hover:bg-white/10 transition-colors" href="#misteri">
+<span class="material-symbols-outlined text-white/80">help_outline</span>
+<p class="text-white/80 text-sm font-medium leading-normal">Misteri</p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</aside>
+<!-- Article Body -->
+<main class="flex-1 min-w-0">
+<!-- HeaderImage -->
+<div class="@container">
+<div class="@[480px]:py-3">
+<div class="bg-cover bg-center flex flex-col justify-end overflow-hidden @[480px]:rounded-xl min-h-[280px]" data-alt="Silhouette of Gin from Detective Conan" style='background-image: linear-gradient(0deg, rgba(18, 18, 18, 0.8) 0%, rgba(18, 18, 18, 0) 50%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5duwpAo4vaNFPbZlpT9aEbyOHLETMGzB_LRVCnfgjmqqUgrr7fJWaxqJoeVVqI19SsMhni_49cxdrvzT4xVgVV4MqJX3cnbKa7BQ_yGJnsgrFgWT7GzqJqDDSHwBHBkepA77CNEikmge-nsRD7-Prbxp5AMEm9aY5x3Kxfb5maY4Nz8ZG_waL1clnk9rzytfEVsE8HIYQPgO7dCBpK5UG0INR5CLF2xkoAtpgdGSevRAseK5QTJUE1vsmBkI7N-cQBa0ZtX697UM");'>
+<div class="flex p-6"><p class="text-white tracking-tight text-4xl md:text-5xl font-black">Organisasi Hitam</p></div>
+</div>
+</div>
+</div>
+<!-- Intro Section -->
+<div class="pt-2" id="pendahuluan">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Pendahuluan</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-4 px-4">
+                            Organisasi Hitam adalah antagonis utama dalam seri Detektif Conan. Ini adalah sindikat kriminal rahasia yang tujuan utamanya masih diselimuti misteri, meskipun petunjuk mengarah pada pencarian keabadian atau memutar kembali waktu. Operasi mereka mencakup berbagai kegiatan ilegal seperti pemerasan, penyuapan, dan pembunuhan, yang semuanya dilakukan dengan presisi dan kerahasiaan tingkat tinggi. Mereka bertanggung jawab atas penyusutan Shinichi Kudo menjadi Conan Edogawa melalui racun eksperimental APTX 4869.
+                        </p>
+</div>
+<!-- History and Purpose Section -->
+<div class="pt-8" id="sejarah">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Sejarah dan Tujuan</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-4 px-4">
+                            Sejarah Organisasi Hitam sangat rahasia, dengan operasi yang telah berlangsung setidaknya selama setengah abad. Tujuan akhir mereka tidak pernah dinyatakan secara eksplisit, tetapi kegiatan mereka, terutama pengembangan obat-obatan seperti APTX 4869, menunjukkan minat yang mendalam pada manipulasi proses penuaan, keabadian, atau bahkan "membangkitkan orang mati," seperti yang pernah disinggung oleh Vermouth. Para anggotanya menggunakan nama sandi minuman beralkohol dan beroperasi dalam hierarki yang ketat, dengan sosok "Bos" yang misterius di puncaknya.
+                        </p>
+</div>
+<!-- Member Cards Section -->
+<div class="pt-8" id="anggota">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Anggota Penting</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4 pt-6">
+<!-- Card Gin -->
+<div class="rounded-xl overflow-hidden glassmorphism group hover:border-primary transition-all duration-300 border border-transparent">
+<img class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105" data-alt="Image of Gin" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqTKFi5-qRIWOZrFP_YV1F2KUhXRQa4ShRcfLKQvKBGICyCpASRjEVCbnAGRidGezFZtEQTaQwrcNQg86oR3j1-5CO4SeeE2j9tQkBCXy6g_U6LNBd63ugpZetnAcBVDFDeCoHryLPHvDkZXaNqMxUBuSzBo1KVrqZE-4t0Ezdu1NiO601AsOUEa4TRUpWF6utrIPn-vjusAX51azFK46hHT1UXc6XlXm9bxDVmAUjPX04162u7M-QI_UcVidzkN-NrffcULQt3Y0"/>
+<div class="p-4">
+<h3 class="text-white text-lg font-bold">Gin</h3>
+<p class="text-white/70 text-sm mt-1 leading-relaxed">Eksekutif tingkat tinggi yang dingin dan kejam, bertanggung jawab atas banyak operasi pembunuhan. Dialah yang memberikan APTX 4869 kepada Shinichi.</p>
+</div>
+</div>
+<!-- Card Vodka -->
+<div class="rounded-xl overflow-hidden glassmorphism group hover:border-primary transition-all duration-300 border border-transparent">
+<img class="w-full h-48 object-cover object-center transition-transform duration-300 group-hover:scale-105" data-alt="Image of Vodka" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUNo4BdGW4TP9sU7ofLr8Hcl55WQE5ZBcQVyek36dtqE5MhaHBy6k1PQKYRszuNDH4vLfXuhc04VwtFHBfZH_J_F2ACRmmjMSaxf_enxVrojF3EmzDQaZlTZ_DdRcUKsmAmxPCRAP7cWo_9DuAv4qLDoUG8nNzJzBe20Qb-dFG3uOXSLJhBHf1FTD6g3pR24cLOb1JmrIHAHUklCH_z0yaUrGfk1G62t10JOFxQO5LhFHj7eqgGQYx-_KHetJHDepQeE9Sg7ti40Q"/>
+<div class="p-4">
+<h3 class="text-white text-lg font-bold">Vodka</h3>
+<p class="text-white/70 text-sm mt-1 leading-relaxed">Partner setia Gin, sering terlihat bersamanya dalam berbagai misi. Meskipun kurang cerdas, ia sangat patuh pada Gin.</p>
+</div>
+</div>
+<!-- Card Vermouth -->
+<div class="rounded-xl overflow-hidden glassmorphism group hover:border-primary transition-all duration-300 border border-transparent">
+<img class="w-full h-48 object-cover object-top transition-transform duration-300 group-hover:scale-105" data-alt="Image of Vermouth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoRgduPG4q9WeARQ8Ed3oepB0gr0dyKh-eLpwvaZ0AHD_iw9WgkFvL-DOuevu-vuGYPwMxiH2lH_eaSdfO_9v0c-D4HGdy6youqcfMWHxRVnfEyn82XXr3O43VWl95_BSkUbQ2qzKPJ_EjHAyvqGNjtbcvWEiRwZYH4jdpI7t23jtstXwJuK5V1BfOywE66fIBn_5Cqv2MkxggWyKjWvPNOKxG2um9iXQzN6kMG6Erp3TNh3G8VPD0CXoH_i52EwDPGyMmqY7ta90"/>
+<div class="p-4">
+<h3 class="text-white text-lg font-bold">Vermouth</h3>
+<p class="text-white/70 text-sm mt-1 leading-relaxed">Anggota misterius dan favorit "Bos". Ahli penyamaran dan manipulasi, ia tampaknya memiliki agenda tersembunyi sendiri.</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Other Sections placeholders -->
+<div class="pt-8" id="operasi">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Operasi Utama</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-4 px-4">
+                             Organisasi ini terlibat dalam banyak kasus besar, mulai dari pemerasan di episode pertama hingga konfrontasi besar seperti dalam "The Raven Chaser" dan "The Darkest Nightmare". Operasi mereka seringkali melibatkan teknologi canggih, perencanaan yang matang, dan penghapusan saksi tanpa ampun.
+                         </p>
+</div>
+<div class="pt-8" id="korban">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Korban Terkenal</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-4 px-4">
+                             Beberapa korban terkenal termasuk Akemi Miyano (kakak Ai Haibara), Pisco, dan berbagai agen FBI, CIA, serta Kepolisian Rahasia Jepang yang mencoba menyusup ke dalam organisasi. Daftar korban mereka panjang dan mencakup siapa saja yang dianggap sebagai ancaman.
+                         </p>
+</div>
+<div class="pt-8" id="misteri">
+<h2 class="text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5 border-b-2 border-primary/50 inline-block">Misteri yang Belum Terpecahkan</h2>
+<p class="text-white/80 text-base font-normal leading-relaxed pb-3 pt-4 px-4">
+                             Misteri terbesar yang menyelimuti organisasi adalah identitas asli dari "Bos" mereka, yang hanya diketahui berkomunikasi melalui pesan teks. Selain itu, tujuan sebenarnya di balik pengembangan APTX 4869 dan alasan mengapa Vermouth tidak menua juga masih menjadi teka-teki utama dalam seri ini.
+                         </p>
+</div>
+</main>
+</div>
+</div>
+</div>
+</div>
+</body></html>
